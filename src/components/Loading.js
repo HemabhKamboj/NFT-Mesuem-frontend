@@ -1,4 +1,4 @@
-import { cn } from '@/utils.js';
+import { cn } from '@/lib/utils.js';
 import SpinningIcon from '@/assets/oval.svg';
 
 const Loading = ({ className, ...props }) => (

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { getPosts } from './service.js';
+import { getCollection } from './service.js';
 
 const Post = ({ title, body }, key) => (
   <div className="prose lg:prose-xl" key={key}>
@@ -9,20 +9,20 @@ const Post = ({ title, body }, key) => (
   </div>
 );
 
-const Posts = () => {
+const Collection = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    getPosts().then(setPosts).catch(console.error);
+    getCollection().then(setPosts).catch(console.error);
   }, []);
 
   return (
     <div className="prose prose-blue lg:prose-xl">
-      <h1>Posts</h1>
+      <h1>Collection</h1>
 
-      <div className="space-y-4">{posts.map(Post)}</div>
+      {/* <div className="space-y-4">{posts.map(Post)}</div> */}
     </div>
   );
 };
 
-export default Posts;
+export default Collection;

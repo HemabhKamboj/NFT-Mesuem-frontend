@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
-import { cn } from '@/utils.js';
+import { cn } from '@/lib/utils.js';
 import LogoIcon from '@/assets/favicon.svg';
-import routes from '@/routes.jsx';
-import MenuItem from '@/components/MenuItem.jsx';
+import routes from '@/routes';
+import MenuItem from '@/components/MenuItem';
 import HamburgerIcon from '@/assets/hero-icon-menu.svg';
 import CLoseIcon from '@/assets/hero-icon-x.svg';
 

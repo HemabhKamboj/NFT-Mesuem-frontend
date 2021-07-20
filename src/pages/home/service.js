@@ -1,4 +1,4 @@
-import client from '@/client.js';
+import client from '@/lib/client.js';
 
 export const getPosts = async () => {
   const { data } = await client.get('/posts');

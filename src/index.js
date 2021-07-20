@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import './fonts.css';
-import './style.css';
-import App from './App.jsx';
+import './styles/fonts.css';
+import './styles/style.css';
+import App from './App';
 
 const root = document.createElement('div');
 document.body.appendChild(root);
