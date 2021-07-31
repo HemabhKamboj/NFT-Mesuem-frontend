@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { getCollection } from './service.js';
 
@@ -17,11 +18,22 @@ const Collection = () => {
   }, []);
 
   return (
-    <div className="prose prose-blue lg:prose-xl">
-      <h1>Collection</h1>
+    <>
+      <div style={{ height: 'calc(100vh - 30px)' }} className="prose prose-blue lg:prose-xl">
+        <h1>Collection</h1>
 
-      {/* <div className="space-y-4">{posts.map(Post)}</div> */}
-    </div>
+        <p>
+          A bare minimum, and as much as un-opinionated as can be, boilerplate
+          so you can start develope and deploy React apps with Tailwind CSS and
+          Webpack 5.
+        </p>
+
+        <p>
+          Checkout <Link to="/">home</Link> page.
+        </p>
+      </div>
+      {/* <TabBar /> */}
+    </>
   );
 };
 

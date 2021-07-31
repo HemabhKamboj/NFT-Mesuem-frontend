@@ -11,7 +11,8 @@
     "predev": "yarn build-css",
     "dev": "webpack serve --mode development --config webpack.config.development.js --inline --hot --history-api-fallback --progress",
     "prebuild": "NODE_ENV=production yarn build-css",
-    "build": "webpack --mode production --config webpack.config.production.js"
+    "build": "webpack --mode production --config webpack.config.production.js",
+    "commit": "git cz"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
@@ -41,13 +42,21 @@
     "webpack-merge": "^5.2.0"
   },
   "dependencies": {
+    "antd-mobile": "^2.3.4",
     "axios": "^0.21.0",
+    "git-cz": "^4.7.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
+    "rmc-tabs": "^1.2.29",
     "serve": "^11.3.2"
   },
   "prettier": {
     "singleQuote": true
+  },
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
   }
 }
