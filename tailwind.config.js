@@ -8,6 +8,10 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      textColor: {
+        heading: '#7B8794',
+        secondary: '#F5F7FA'
+      },
     },
   },
   variants: {

@@ -12,7 +12,7 @@ const TabBar = () => {
   return (
     <Tabs
       style={{ height: '30px' }}
-      className="absolute bottom-0"
+      className="fixed bottom-0"
       onTabClick={changeRoute}
       tabs={routes.map((props) => ({
         key: props.title,
