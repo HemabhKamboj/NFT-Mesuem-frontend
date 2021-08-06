@@ -38,11 +38,20 @@ module.exports = {
     alias: {
       '@': resolve(__dirname, 'src'),
     },
+    fallback: {
+      "os": false,
+      "https": false,
+      "http": false,
+      "crypto": false,
+      "stream": false,
+      "assert": false,
+      "stream-browserify": false
+    }
   },
 
   plugins: [
     new HtmlPlugin({
-      title: 'React, Tailwind and Webpack 5 Boilerplate',
+      title: 'NFT Museum',
       favicon: './src/assets/favicon.svg',
     }),
   ],

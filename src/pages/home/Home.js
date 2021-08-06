@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useHistory } from 'react-router';
 
 import CollectionCard from '@/components/CollectionCard';
 import Header from '@/components/Header';
@@ -17,16 +18,25 @@ const COLORS = [
 
 const Home = () => {
   const [showSearch, setShowSearch] = useState(true);
+  const history = useHistory();
 
   const onClickSearchIcon = () => {
     setShowSearch(!showSearch);
   };
 
+  useEffect(() => {
+    const localUserAuthID = localStorage.getItem('nft-museum-user-id');
+
+    if (!localUserAuthID) {
+      history.push('/auth');
+    }
+  }, [])
+
   return (
     <>
       <div
-        style={{ height: 'calc(100vh - 30px)' }}
-        className="p-4 bg-light-gray"
+        style={{ height: 'calc(100vh - 62px)' }}
+        className="p-4 bg-white"
       >
         <Header showSearch={showSearch} onClickSearch={onClickSearchIcon} />
 
@@ -56,7 +66,7 @@ const Home = () => {
           </>
         )}
 
-        <div className="flex justify-between items-center my-8">
+        <div className="flex justify-between items-center mt-8 mb-12">
           <span className="text-sm font-medium text-gray-500">Collections</span>
           <span className="text-sm font-medium text-gray-300">
             SORT / FILTER

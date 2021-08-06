@@ -51,7 +51,7 @@ function CreateCollection(props) {
   }
 
   return (
-    <div className=''>
+    <div style={{ height: 'calc(100vh - 46px)' }}>
       <h4 className='text-3xl'>Create a Collection</h4>
       <div className='text-sm'>Add NFTS in your collection</div>
       <Form

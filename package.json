@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
+    "@celo-tools/use-contractkit": "^1.0.0-beta.3",
     "antd": "^4.15.1",
     "axios": "^0.21.0",
     "git-cz": "^4.7.6",

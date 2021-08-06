@@ -1,1 +1,6 @@
 @import "https://rsms.me/inter/inter.css";
+@import '~antd/dist/antd.css';
+
+.ant-tabs-nav-list {
+    justify-content: center;
+}
