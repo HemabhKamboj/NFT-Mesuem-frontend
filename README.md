@@ -40,8 +40,6 @@ Splash Screen |  Connect Wallet |  Discover Collections | Search | See NFTs in a
 ### Link for backend Repository
 [@nft-museum-api](https://github.com/HemabhKamboj/nft-museum-api)
 ## ✍️ Authors <a name = "authors"></a>
--   [@dhruv10](https://github.com/dhruv10)
--   [@hardik-ahuja](https://github.com/hardik-ahuja)
 -   [@HemabhKamboj](https://github.com/HemabhKamboj)
 
 ## Additional Screenshots
