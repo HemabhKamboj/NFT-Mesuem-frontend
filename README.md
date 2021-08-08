@@ -15,7 +15,7 @@ NFT Museum
 ###  What is NFT Museum ? <a name = "what"></a>
 
 NFT Museum is a mobile first platform authenticated by multiple crypto wallets including Valora for art lovers to curate their favourite digital art pieces as a collection and be shared to community. A curator ( user who creates collection) can add multiple NFTs from OpenSea and create a collection by theme, asthetics or free will, just like a Spotify playlists !
-These collections are visible to everyone, searchable by tags and number of likes.
+These collections are visible to everyone, searchable by tags and sorted by number of likes.
 
 ###  Why NFT Museum? <a name = "why"></a>
 
